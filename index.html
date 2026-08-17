@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 Hill Cabs | Tirupati Taxi & Travels</title>
+<meta name="description" content="7 Hill Cabs Tirupati - local sightseeing, Tirumala trips, outstation travel and airport/railway transfers. Call 9703595636.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#07182d;color:#fff}
+.hero{max-width:1200px;margin:auto;padding:14px}
+.hero img{width:100%;border-radius:18px;display:block}
+.wrap{max-width:1100px;margin:auto;padding:20px}
+h1,h2{color:#ffd21c}h1{font-size:38px;margin:10px 0}h2{font-size:30px}
+.sub{text-align:center;font-size:20px;margin:12px 0 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#102844;border:1px solid #d7aa00;border-radius:16px;padding:22px;text-align:center}
+.card h3{color:#ffd21c;margin:8px 0}.card p{line-height:1.5}
+.btn{display:inline-block;background:#ffd21c;color:#07182d;text-decoration:none;font-weight:bold;padding:15px 22px;border-radius:30px;margin:8px}
+.whatsapp{background:#25d366;color:white}
+.booking{background:#fff;color:#111;border-radius:18px;padding:25px;max-width:700px;margin:30px auto}
+.booking input,.booking select{width:100%;padding:13px;margin:7px 0;border:1px solid #bbb;border-radius:8px}
+footer{text-align:center;padding:25px;background:#061225;margin-top:30px}
+.small{opacity:.85}
+</style>
+</head>
+<body>
+<div class="hero"><img src="7-hill-cabs-banner.png" alt="7 Hill Cabs Tirupati"></div>
+
+<div class="wrap">
+  <div style="text-align:center">
+    <h1>7 HILL CABS – TIRUPATI</h1>
+    <div class="sub">Safe Journey… Happy Journey…<br>Your Trusted Travel Partner in Tirupati</div>
+    <a class="btn" href="tel:+919703595636">📞 Call 9703595636</a>
+    <a class="btn whatsapp" href="https://wa.me/919703595636?text=Hello%207%20Hill%20Cabs%2C%20I%20want%20to%20book%20a%20cab." target="_blank">💬 WhatsApp Booking</a>
+  </div>
+
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>🏔️ Tirupati Sightseeing</h3><p>Local sightseeing and Tirumala trips with comfortable vehicles.</p></div>
+    <div class="card"><h3>🚕 Outstation Trips</h3><p>Comfortable travel from Tirupati to nearby cities and long-distance destinations.</p></div>
+    <div class="card"><h3>✈️ Airport / Railway</h3><p>Pickup and drop services from Tirupati Airport and Railway Station.</p></div>
+    <div class="card"><h3>📅 Packages</h3><p>Daily, weekly and monthly cab packages available.</p></div>
+  </div>
+
+  <h2>Popular Trips</h2>
+  <div class="grid">
+    <div class="card"><h3>Tirumala – Tirupati</h3><p>Temple and local travel packages.</p></div>
+    <div class="card"><h3>Kanipakam</h3><p>Tirupati to Kanipakam cab trips.</p></div>
+    <div class="card"><h3>Srikalahasti</h3><p>Comfortable temple trip from Tirupati.</p></div>
+    <div class="card"><h3>Vellore</h3><p>Tirupati to Vellore travel.</p></div>
+  </div>
+
+  <div class="booking">
+    <h2 style="margin-top:0">Book Your Ride</h2>
+    <input id="name" placeholder="Your Name">
+    <input id="pickup" placeholder="Pickup Location">
+    <input id="drop" placeholder="Drop / Destination">
+    <input id="date" type="date">
+    <select id="vehicle">
+      <option>Any Vehicle</option>
+      <option>Innova Crysta</option>
+      <option>Ertiga</option>
+      <option>Swift Dzire</option>
+    </select>
+    <input id="passengers" type="number" min="1" placeholder="Number of Passengers">
+    <button class="btn whatsapp" style="border:0;cursor:pointer;width:100%" onclick="book()">Send Booking on WhatsApp</button>
+  </div>
+</div>
+
+<footer>
+  <strong>7 HILL CABS – TIRUPATI</strong><br>
+  📞 9703595636<br>
+  <span class="small">Comfort • Safety • Reliability • Experienced Drivers</span>
+</footer>
+
+<script>
+function book(){
+  const n=document.getElementById('name').value;
+  const p=document.getElementById('pickup').value;
+  const d=document.getElementById('drop').value;
+  const date=document.getElementById('date').value;
+  const v=document.getElementById('vehicle').value;
+  const ps=document.getElementById('passengers').value;
+  const msg=`Hello 7 Hill Cabs, I want to book a cab.%0AName: ${encodeURIComponent(n)}%0APickup: ${encodeURIComponent(p)}%0ADestination: ${encodeURIComponent(d)}%0ADate: ${encodeURIComponent(date)}%0AVehicle: ${encodeURIComponent(v)}%0APassengers: ${encodeURIComponent(ps)}`;
+  window.open('https://wa.me/919703595636?text='+msg,'_blank');
+}
+</script>
+</body>
+</html>
